@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio de Sesión | UniNotas</title>
+</head>
+
+<body style="font-family: Arial; background-color: #f0f4f8;">
+
+    <header style="background-color:#1a3c6e; color:white; padding:15px; text-align:center;">
+        <div style="width:50px; height:50px; background:#fff; border-radius:50%;
+                    display:inline-flex; align-items:center; justify-content:center;
+                    vertical-align:middle; margin-right:10px;">
+            <span style="color:#1a3c6e; font-weight:bold; font-size:1.1rem;">UN</span>
+        </div>
+        <span style="font-size:1.8rem; font-weight:bold; vertical-align:middle;">UniNotas</span>
+        <p style="margin:5px 0 0 0; font-size:0.95rem;">Sistema de Gestión de Notas Universitarias</p>
+    </header>
+
+   
+
+    <main>
+        <section style="width:400px; margin:40px auto; background-color:white;
+                        padding:30px; border:1px solid #ccc; border-radius:10px;">
+
+            <h2 style="color:green; text-align:center; font-size:1.6rem;">Inicio de Sesión</h2>
+            <p style="text-align:center; font-size:0.9rem; color:#555;">
+                Únicamente se debe ingresar con credenciales universitarias
+            </p>
+            <hr>
+
+            <form action="principal.html" method="get">
+
+                <div style="margin-bottom:15px;">
+                    <label for="correo" style="font-weight:bold;">Correo electrónico</label>
+                    <br><br>
+                    <input type="email" id="correo" name="correo"
+                           placeholder="correo@universidad.edu.ec" required
+                           style="width:95%; padding:10px; border:1px solid #ccc; border-radius:5px;" />
+                </div>
+
+                <div style="margin-bottom:20px;">
+                    <label for="contrasena" style="font-weight:bold;">Contraseña</label>
+                    <br><br>
+                    <input type="password" id="contrasena" name="contrasena"
+                           placeholder="Entre 8 y 16 caracteres"
+                           minlength="8" maxlength="16" required
+                           style="width:95%; padding:10px; border:1px solid #ccc; border-radius:5px;" />
+                </div>
+
+                <div style="text-align:center;">
+                    <button type="submit"
+                            style="background-color:green; color:white; padding:10px 20px;
+                                   border:none; border-radius:5px; cursor:pointer;
+                                   width:100%; font-size:1rem;">
+                        Ingresar al Sistema
+                    </button>
+                </div>
+
+            </form>
+
+            <p style="text-align:center; margin-top:20px; font-size:0.95rem;">
+                ¿No tienes una cuenta? <a href="registro.html" style="color:green;">Regístrate aquí</a>
+            </p>
+
+        </section>
+    </main>
+
+    <footer style="text-align:center; background-color:#1a3c6e; color:white; padding:15px; margin-top:30px;">
+        <p>&copy; 2025 Anndy Tomalo &mdash; Sistema de Gestión de Notas Universitarias</p>
+    </footer>
+
+</body>
+</html>
